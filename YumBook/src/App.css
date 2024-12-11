@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.srchbtn {
+  padding: 8px;
+  border-radius: 15px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  margin: 7px;
+
+
+}
+
+.thali {
+  height: 20rem;
+  width: 20rem;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./assets/salmon.jpg);
+  border-radius: 50%;
+}
+
+.thali-textt {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 8rem;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.menuu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  padding-right: 1rem;
+}
+
+.Nav {
+  background-color: rgb(248, 143, 187);
+  background-size: cover;
+  width: 100%;
+  height: 12vh;
+  background-repeat: no-repeat;
+}
+
+.searchbar input {
+  border-radius: 30px;
+  border: none;
+  padding: 0.5rem;
+  width: 15rem;
+
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.searchbar button:hover {
+  background-color: rgb(245, 150, 8);
+  border-color: rgba(225, 119, 20, 0.985);
+  cursor: pointer;
+}
+
+
+.con-home {
+  display: flex;
+  margin-left: 1rem;
+  justify-content: space-evenly;
+  gap: 4rem;
+  font-size: .85rem;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+  background-image: url(./assets/Food-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+
+
+.searchbar2 input {
+  border-radius: 30px;
+  border: none;
+  padding: 0.5rem;
+  width: 15rem;
+
+}
+
+.searchbar2 input:focus {
+  outline: none;
+}
+
+.searchbar2 button:hover {
+  background-color: rgb(245, 150, 8);
+  border-color: rgba(225, 119, 20, 0.985);
+  cursor: pointer;
+}
+
+
+
+
+
+
+.recipebtn {
+  padding: 5px;
+  border-radius: 15px;
+  color: rgb(254, 252, 252);
+  border: none;
+  background-color: rgba(252, 202, 6, 0.904);
+
+}
+
+.meals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+
+}
+
+.mealimg {
+  width: 280px;
+  height: 380px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 3px 3px 3px rgb(240, 240, 240);
+  border-radius: 11px;
+}
+
+
+.mealsimgs {
+  width: 100%;
+}
+
+.Loader {
+  width: fit-content;
+
+  animation: spin .5s linear infinite;
+  font-size: 60px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.Loadp {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loaderh1 {
+  display: flex;
+  align-items: center;
+}
+
+.pic {
+  background-image: url(./assets/bg_wave.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+
+}
+
+.menu-icon {
+  font-size: 2.5rem;
+}
+
+.info {
+  display: flex;
+}
+
+.Recipediv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+
+}
+
+
+.Footer {
+  background-color: rgb(26, 26, 26);
+  height: 25vh;
+  width: 100%;
+  color: white;
+  padding-top: 1rem;
+}
+
+
+@media (max-width:670px) {
+  .thali-textt {
+    flex-direction: column;
+    padding-left: 1.5rem;
+    gap: 3rem;
+  }
+}
+
+@media (max-width:908px) {
+  .con-home {
+    display: none;
+  }
+
+  .searchbar {
+    display: none;
+  }
+}
+
+@media(min-width:908px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media(max-width:1159px) {
+  .info {
+    flex-direction: column;
+
+  }
+}
